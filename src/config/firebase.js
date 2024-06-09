@@ -1,6 +1,6 @@
 const firebaseAdmin = require('firebase-admin');
 
-const serviceAccount = require('./allergy-savvy-firebase-adminsdk.json');
+const serviceAccount = require('');
 
 firebaseAdmin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
