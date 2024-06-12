@@ -3,6 +3,7 @@ require("dotenv").config();
 const Hapi = require("@hapi/hapi");
 const routes = require("../server/routes");
 
+
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
