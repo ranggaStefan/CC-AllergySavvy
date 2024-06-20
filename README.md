@@ -23,22 +23,22 @@ Then you're ready to go
 1. Clone this repository to your Cloud CLI using
 
         git clone https://github.com/AllergySavvy/CC-AllergySavvy-Dev
-3. Authenticate your Google Cloud Platform account and set the project using cloud SDK
+2. Authenticate your Google Cloud Platform account and set the project using cloud SDK
    
         gcloud auth login
         gcloud config set project (YOUR_PROJECT_ID)
-4. Build the Docker image
+3. Build the Docker image
    
         gcloud auth configure-docker
         docker build -t gcr.io/(YOUR_PROJECT_ID)/(APP_NAME) .
-5. Push the Docker Image
+4. Push the Docker Image
    
         docker push gcr.io/(YOUR_PROJECT_ID)/(APP_NAME)
-6. Deploy to Cloud Run 
+5. Deploy to Cloud Run (if you are prompted to enable Cloud Run API type **y**)
    
         gcloud run deploy (APP_NAME) --image gcr.io/(YOUR_PROJECT_ID)/(APP_NAME) --platform managed --region (SET_REGION) --allow-unauthenticated
-(notes: if you are prompted to enable Cloud Run API type **y**)
-7. Once deployed, the service is ready to be used! Test it in your API request tool e.g. Postman etc.
+
+6. Once deployed, the service is ready to be used! Test it in your API request tool e.g. Postman etc.
    
 
 ## Features
