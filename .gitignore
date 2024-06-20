@@ -2,3 +2,5 @@ node_modules
 pyenv
 models
 requirements.txt
+app.py
+.dockerignore
